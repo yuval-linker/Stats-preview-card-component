@@ -18,6 +18,13 @@
       bottom: 10px;
       left: 40%;
     }
+
+    @media screen and (max-width: 600px) {
+      .attribution {
+        left: 10%;
+        right: 10%;
+      }
+    }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -41,7 +48,7 @@
       </div>
     </div>
     <div class="card-img">
-      <img src="images/image-header-desktop.jpg" class="img-filtered rounded-img" />
+      <img src="images/image-header-desktop.jpg" id="stat-img" class="img-filtered rounded-img" />
     </div>
   </div>
 
@@ -49,5 +56,20 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/yuval-linker" target="_blank">Yuval Linker</a>.
   </div>
+
+  <script type="text/javascript">
+    function changeImg() {
+      let img = document.getElementById("stat-img");
+      if (window.innerWidth <= 500) {
+        img.src = "images/image-header-mobile.jpg";
+      } else {
+        img.src = "images/image-header-desktop.jpg";
+      }
+    }
+
+    window.addEventListener("resize", changeImg);
+
+    changeImg();
+  </script>
 </body>
 </html>

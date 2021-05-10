@@ -90,4 +90,49 @@ body {
   margin-top: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .card {
+    top: 50%;
+    left: 48%;
+    flex-direction: column-reverse;
+    margin: 10px;
+    width: 80%;
+    flex-basis: 0;
+  }
+  .card-info {
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .card-header {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .card-paragraph {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .card-img {
+    border-radius: 5px 5px 0 0;
+  }
+  .card-stats {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rounded-img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .stat {
+    margin: 20px 0;
+  }
+}
+
 /*# sourceMappingURL=card.css.map */
